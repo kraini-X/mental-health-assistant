@@ -6,9 +6,9 @@ MindMate is an empathetic, RAG-based (Retrieval-Augmented Generation) mental hea
 
 ## 🌟 Features
 
-- 🔍 **RAG-based Answers**: Combines user queries with relevant context from a medical knowledge base using ChromaDB and responds empathetically.
+- 🔍 **RAG-based Answers**: Combines user queries with relevant context from a medical knowledge base using ChromaDB and responds empathetically.Advices the user to seek professional help if the mental state is too critical
 - 💬 **Chat History**: Retains past messages to support contextual conversation.
-- 🧠 **Sentiment Analysis**: Analyzes the emotional tone of user input using a BERTweet model.
+- 🧠 **Sentiment Analysis**: Analyzes the emotional tone of user input using a BERTweet model.The model studies from the emotion of the user and tailors the next response
 - 📈 **Emotional Tracking**: Logs sentiment history and provides summaries of emotional well-being whenever prompted.
 - 🎨 **Custom Gradio UI**: Clean and user-friendly chat interface with mood icons and summaries.
 
@@ -35,11 +35,5 @@ The context used in responses is sourced from:
 
 ---
 
-## 🛠️ Setup Instructions
 
-1. **Clone the Repository**
-
-```bash
-git clone https://github.com/your-username/mindmate-mental-health-assistant.git
-cd mindmate-mental-health-assistant
 
