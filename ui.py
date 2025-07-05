@@ -40,4 +40,10 @@ chat = gr.ChatInterface(
    
 )
 if __name__ == "__main__":
-    chat.launch(share=True)
+    chat.launch(
+        share=True,
+        server_name="0.0.0.0",
+        server_port=7860  # Change this to any free port you prefer
+    )
+
+   
