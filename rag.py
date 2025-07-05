@@ -4,7 +4,7 @@ from unittest import result
 from sentence_transformers import SentenceTransformer
 from transformers import pipeline
 import chromadb
-from openai import OpenAI
+
 from dotenv import load_dotenv
 import os
 import speech_recognition as sr
