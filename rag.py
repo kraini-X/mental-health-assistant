@@ -7,8 +7,8 @@ import chromadb
 
 from dotenv import load_dotenv
 import os
-import speech_recognition as sr
-from pydub import AudioSegment
+
+
 import tempfile
 from sentiment_tracker import log_sentiment
 from groq import Groq
