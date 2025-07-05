@@ -30,7 +30,7 @@ def sentiment_analysis(text):
     results = sentiment_pipeline(truncated_text)
 
     if isinstance(results, list) and len(results) > 0:
-        # Sort by score to get the most confident result
+     
         top_result = sorted(results, key=lambda x: x['score'], reverse=True)[0]
         label = top_result['label']
 
@@ -41,7 +41,7 @@ def sentiment_analysis(text):
         else:
             return '⚪️ Neutral'
     else:
-        return '⚪️ Neutral'  # Fallback in case of unexpected output
+        return '⚪️ Neutral'  
 
 
 def sentiment_analysis_with_logging(text):
@@ -55,7 +55,7 @@ def sentiment_analysis_with_logging(text):
 
 
 def rag_with_history(user_input, history=[]):
-    # Step 1: Rebuild conversation history (no mutation of original)
+    
     messages = []
     for msg in history:
         messages.append(msg)
@@ -85,7 +85,7 @@ def rag_with_history(user_input, history=[]):
         )
         context = "\n".join(results["documents"][0])
 
-        # Step 4: Add system prompt
+        
         system_message = {
             "role": "system",
             "content": (
@@ -95,8 +95,7 @@ def rag_with_history(user_input, history=[]):
                 f"{context}"
             )
         }
-        #all_messages = [system_message] + messages
-        # Sanitize messages to contain only valid keys: 'role' and 'content'
+        
         sanitized_messages = [
             {"role": m["role"], "content": m["content"]}
             for m in messages
@@ -119,7 +118,7 @@ def rag_with_history(user_input, history=[]):
         sentiment = sentiment_analysis_with_logging(user_input)
         reply += f"\n\n🧠 *Sentiment*: **{sentiment}**"
 
-        # Step 6: Return only the new assistant message (do NOT return full chat history)
+       
         return {"role": "assistant", "content": reply}
 
 def messages_to_pairs(messages):
