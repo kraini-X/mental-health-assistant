@@ -7,7 +7,7 @@ wheel
 chromadb==0.4.22         # more stable on render (0.4.24 causes Rust issues)
 sentence-transformers==2.2.2
 transformers==4.39.3     # avoid latest to skip Rust-tokenizer issues
-
+huggingface_hub==0.14.1
 groq==0.5.0
 gradio==4.24.0
 python-dotenv==1.0.1
