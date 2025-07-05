@@ -3,15 +3,21 @@ pip>=24.0
 setuptools>=70
 wheel
 
-# Carefully chosen versions that avoid Rust build issues
-chromadb==0.4.22         # more stable on render (0.4.24 causes Rust issues)
-sentence-transformers==2.2.2
-transformers==4.39.3     # avoid latest to skip Rust-tokenizer issues
-huggingface_hub==0.14.1
-groq==0.5.0
+# ↓ Latest stable version of chromadb
+chromadb==0.4.24
+
+# ↓ Compatible and stable with torch and huggingface
+sentence-transformers==2.5.1
+transformers==4.39.3
+huggingface-hub==0.20.3
+
+# ↓ Torch must match with platform. Use 2.5.1 for Render CPU env
+torch==2.5.1
+
 gradio==4.24.0
 python-dotenv==1.0.1
 pydub==0.25.1
 SpeechRecognition==3.10.1
 PyPDF2==3.0.1
 tqdm==4.66.4
+groq==0.5.0
