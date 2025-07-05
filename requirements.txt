@@ -1,6 +1,12 @@
-chromadb==0.4.24
+# Upgrade pip and build tools first
+pip>=24.0
+setuptools>=70
+wheel
+
+# Carefully chosen versions that avoid Rust build issues
+chromadb==0.4.22         # more stable on render (0.4.24 causes Rust issues)
 sentence-transformers==2.2.2
-transformers==4.41.1
+transformers==4.39.3     # avoid latest to skip Rust-tokenizer issues
 
 groq==0.5.0
 gradio==4.24.0
