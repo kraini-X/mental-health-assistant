@@ -34,8 +34,9 @@ The context used in responses is sourced from:
 - dotenv (environment handling)
 
 ---
-##Screenshots
+## Screenshots
 ![image alt](https://github.com/kraini-X/mental-health-assistant/blob/b292bf32c6a9242b8e89c70645f094a8f923dd15/Screenshot%202025-07-05%20190813.png)
+![image alt](https://github.com/kraini-X/mental-health-assistant/blob/2e1ca021b16cfaa7c0d6868ca4333354c5a5ef41/Screenshot%202025-07-05%20191106.png)
 
 
 
